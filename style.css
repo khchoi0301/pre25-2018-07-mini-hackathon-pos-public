@@ -1,8 +1,17 @@
 h1 {
   font-family: Verdana,Geneva,sans-serif;
+  text-align: center;
+  background-color: green;
+  color: white;
 }
 
 .menu {
   height: 30rem;
-  width: 60rem;
+  width: 100%;
+  text-align: center;
+}
+
+.order-btn {
+  margin-top: 2rem;
+  text-align: center;
 }

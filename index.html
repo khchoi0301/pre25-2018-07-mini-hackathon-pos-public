@@ -5,17 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>CodeBucks POS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
   <script src="script.js"></script>
 </head>
 <body>
- <h1>POS machine for CodeBucks</h1>
- <div>
-   <img class="menu" src="./img/menu.jpg" alt="">
- </div>
+  <div class="container">
+    <div class="col">
+      <h1>POS machine for CodeBucks</h1>
+      <div>
+        <img class="menu" src="./img/menu.jpg" alt="">
+      </div>
+      <div class="order-btn">
+        <button class="btn btn-success btn-lg js-order">주문하기</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

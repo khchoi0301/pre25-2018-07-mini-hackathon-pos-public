@@ -29,8 +29,10 @@
 $(document).ready(function() {
   // your code here
   console.log('hello world');
-  var selectedMenu = prompt('반갑습니다. 고객님, 어떻게 도와드릴까요?');
-  alert('네 주문하신 음료는 ' + selectedMenu  + '입니다.');
+  $('.js-order').click(function() {
+    var selectedMenu = prompt('반갑습니다. 고객님, 어떻게 도와드릴까요?');
+    alert('네 주문하신 음료는 ' + selectedMenu  + '입니다.');
+  })
 });
 
 
