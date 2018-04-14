@@ -10,14 +10,14 @@
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
   </script>
-  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
 </head>
-
 <body>
   <div class="container">
     <div class="col">
@@ -25,28 +25,10 @@
       <div>
         <img class="menu" src="./img/menu.jpg" alt="">
       </div>
+      <div class="order-btn">
+        <button class="btn btn-success btn-lg js-order">주문하기</button>
       </div>
-    <div>
-      <button data-price="2000">아메리카노</button>
-      <button data-price="2500">까페라떼</button>
-      <button data-price="3200">카라멜 마키아또</button>
     </div>
-    <table border="1">
-      <tr>
-        <td>아메리카노</td>
-        <td>1</td>
-        <td>2000</td>
-      </tr>
-      <tr>
-        <td>합계</td>
-        <td></td>
-        <td>2000</td>
-      </tr>
-    </table>
-
-    <!-- hint -->
-    <!-- <button id="thisIsID" data-info="thisIsDataset">Hint</button> -->
   </div>
-  <script src="js/index.js"></script>
 </body>
 </html>
