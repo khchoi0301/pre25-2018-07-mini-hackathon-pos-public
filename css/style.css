@@ -21,6 +21,11 @@ button {
   height: 150px;
   font-size: 14pt;
 }
+
 table {
   width: 460px;
+}
+
+.pos {
+  margin-top: 2rem;
 }
