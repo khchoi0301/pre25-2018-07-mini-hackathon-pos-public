@@ -2,51 +2,53 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>CodeBucks POS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  
+  <!-- 아래와 같이 JavaScript를 HTML 문서에 embed 할 수 있습니다 -->
   <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous">
   </script>
+  <script src="js/menu.js"></script>
+
+  <!-- 아래와 같이 CSS를 HTML 문서에 embed 할 수 있습니다 -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="col">
-      <h1>POS machine for CodeBucks</h1>
-      <div>
-        <img class="menu" src="./img/menu.jpg" alt="">
-      </div>
-      </div>
-    <div class="pos">
-      <button data-price="2000">아메리카노</button>
-      <button data-price="2500">까페라떼</button>
-      <button data-price="3200">카라멜 마키아또</button>
+  <div>
+    <div id="header">
+      <h1>POS Machine for CodeBucks</h1>
+      <img id="logo" src="./img/menu.jpg" alt="">
     </div>
-    <table border="1">
-      <tr>
-        <td>아메리카노</td>
-        <td>1</td>
-        <td>2000</td>
-      </tr>
-      <tr>
-        <td>합계</td>
-        <td></td>
-        <td>2000</td>
-      </tr>
-    </table>
 
-    <!-- hint -->
-    <!-- <button id="thisIsID" data-info="thisIsDataset">Hint</button> -->
+    <div class="container">
+      <div id="menu-container" class="inner-container">
+        <!-- 여기에 menu 데이터가 JavaScript에 의해 동적으로 렌더링됩니다 -->
+      </div>
+
+      <div id="queue-container" class="inner-container">
+        <!--
+          queue 안쪽에 table로 표시된 내용은, 이렇게 렌더링 할 수 있다는 것을 보여주는 예시입니다.
+          실제로, 이 내용은 JavaScript에 의해 동적으로 추가/삭제 되어야 할 것입니다.
+        -->
+        <table id="queue" border="1">
+          <tr>
+            <td>아메리카노</td>
+            <td>1</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td>합계</td>
+            <td></td>
+            <td>2000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
+  <!-- 아래와 같이 JavaScript를 HTML 문서에 embed 할 수 있습니다 -->
   <script src="js/index.js"></script>
 </body>
 </html>
